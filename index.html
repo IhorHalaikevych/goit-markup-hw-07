@@ -14,10 +14,88 @@
       rel="stylesheet"
     />
     <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/mobail.css" rel="stylesheet" />
+    <link href="./css/tablet.css" rel="stylesheet" />
+    <link href="./css/desktop.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header-wrap">
+
+     
       <div class="container header-container">
+         <!-- ---------------Mobail-menu--------------- -->
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button class="mobile-close-btn js-close-menu">
+          <svg class="mobile-close-icon" width="8" height="8">
+            <use href="./images/symbol-defs.svg#icon-x-modal"></use>
+          </svg>
+        </button>
+        <ul class="mobile-site-nav list">
+          <li class="mobile-item">
+            <a href="./index.html" class="mobile-nav-title link current"
+              >Studio</a
+            >
+          </li>
+          <li class="mobile-item">
+            <a href="./portfolio.html" class="mobile-nav-title link"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-item">
+            <a href="" class="mobile-nav-title link">Contacts</a>
+          </li>
+        </ul>
+
+        <div class="contacts-wrap">
+          <a href="tel:+110001111111" class="mobile-tel-link link"
+            >+11 (000) 111-11-11</a
+          >
+
+          <a href="mailto:info@devstudio.com" class="mobile-mail-link link"
+            >info@devstudio.com</a
+          >
+        </div>
+
+        <ul class="mobile-sociale-list list">
+          <li class="mobile-sociale-item">
+            <a
+              class="mobile-sociale-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="mobile-sociale-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use></svg></a>
+          </li>
+          <li class="mobile-sociale-item">
+            <a
+              class="mobile-sociale-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="mobile-sociale-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use></svg></a>
+          </li>
+          <li class="mobile-sociale-item">
+            <a
+              class="mobile-sociale-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="mobile-sociale-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use></svg></a>
+          </li>
+          <li class="mobile-sociale-item">
+            <a
+              class="mobile-sociale-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="mobile-sociale-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg></a>
+          </li>
+        </ul>
+      </div>
+      <!-- _______________________________Mobail-menu_______________________ -->
         
         <nav class="header-navigation">
           <a class="logo" href="./index.html">
@@ -50,6 +128,11 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="mobile-menu-open js-open-menu" 
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+          <svg class="menu-icon" width="32" height="22"><use href="images/symbol-defs.svg#icon-charm_menu-hamburger"></use>
+        </svg></button>
       </div>
     </header>
 
@@ -108,7 +191,7 @@
        </div>
       </section>
 
-      <section class="service-offer">
+ <section class="service-offer">
        <div class="container service-container">
           <h2 class="service-header headers">What are we doing</h2>
           <ul class="list list-service ">
@@ -412,5 +495,6 @@
 
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

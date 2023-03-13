@@ -1,0 +1,31 @@
+@media screen and (min-width:480px){
+    .container{
+      max-width: 426px;
+  
+    }
+
+.benefits-logo{
+    display: none;
+}
+
+
+    .service-offer {
+        display: none;
+    }
+    
+    
+    
+    
+  }
+  @media screen and (max-width:480px){
+    .container{
+      max-width: 426px;
+  
+    }
+    .service-offer {
+        display: none;
+    }
+    
+    
+    
+  }
