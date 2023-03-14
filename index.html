@@ -25,75 +25,77 @@
       <div class="container header-container">
          <!-- ---------------Mobail-menu--------------- -->
       <div class="mobile-menu js-menu-container" id="mobile-menu">
-        <button class="mobile-close-btn js-close-menu">
-          <svg class="mobile-close-icon" width="8" height="8">
-            <use href="./images/symbol-defs.svg#icon-x-modal"></use>
-          </svg>
-        </button>
-        <ul class="mobile-site-nav list">
-          <li class="mobile-item">
-            <a href="./index.html" class="mobile-nav-title link current"
-              >Studio</a
+        <div class="menu-wrap">
+          <button class="mobile-close-btn js-close-menu">
+            <svg class="mobile-close-icon" width="8" height="8">
+              <use href="./images/symbol-defs.svg#icon-x-modal"></use>
+            </svg>
+          </button>
+          <ul class="mobile-site-nav list">
+            <li class="mobile-item">
+              <a href="./index.html" class="mobile-nav-title link current"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-item">
+              <a href="./portfolio.html" class="mobile-nav-title link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-item">
+              <a href="" class="mobile-nav-title link mobile-curent">Contacts</a>
+            </li>
+          </ul>
+  
+          <div class="contacts-wrap">
+            <a href="tel:+110001111111" class="mobile-tel-link link"
+              >+11 (000) 111-11-11</a
             >
-          </li>
-          <li class="mobile-item">
-            <a href="./portfolio.html" class="mobile-nav-title link"
-              >Portfolio</a
+  
+            <a href="mailto:info@devstudio.com" class="mobile-mail-link link"
+              >info@devstudio.com</a
             >
-          </li>
-          <li class="mobile-item">
-            <a href="" class="mobile-nav-title link">Contacts</a>
-          </li>
-        </ul>
-
-        <div class="contacts-wrap">
-          <a href="tel:+110001111111" class="mobile-tel-link link"
-            >+11 (000) 111-11-11</a
-          >
-
-          <a href="mailto:info@devstudio.com" class="mobile-mail-link link"
-            >info@devstudio.com</a
-          >
+          </div>
+  
+          <ul class="mobile-sociale-list list">
+            <li class="mobile-sociale-item">
+              <a
+                class="mobile-sociale-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg class="mobile-sociale-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use></svg></a>
+            </li>
+            <li class="mobile-sociale-item">
+              <a
+                class="mobile-sociale-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg class="mobile-sociale-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use></svg></a>
+            </li>
+            <li class="mobile-sociale-item">
+              <a
+                class="mobile-sociale-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg class="mobile-sociale-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use></svg></a>
+            </li>
+            <li class="mobile-sociale-item">
+              <a
+                class="mobile-sociale-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg class="mobile-sociale-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg></a>
+            </li>
+          </ul>
         </div>
-
-        <ul class="mobile-sociale-list list">
-          <li class="mobile-sociale-item">
-            <a
-              class="mobile-sociale-link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              ><svg class="mobile-sociale-icon" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-instagram"></use></svg></a>
-          </li>
-          <li class="mobile-sociale-item">
-            <a
-              class="mobile-sociale-link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              ><svg class="mobile-sociale-icon" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use></svg></a>
-          </li>
-          <li class="mobile-sociale-item">
-            <a
-              class="mobile-sociale-link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              ><svg class="mobile-sociale-icon" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-facebook"></use></svg></a>
-          </li>
-          <li class="mobile-sociale-item">
-            <a
-              class="mobile-sociale-link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              ><svg class="mobile-sociale-icon" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg></a>
-          </li>
-        </ul>
       </div>
       <!-- _______________________________Mobail-menu_______________________ -->
         
@@ -140,9 +142,11 @@
 
 
       <section class="hero">
-        <h1 class="hero-header headers">Effective Solutions for Your Business</h1>
-
-        <button type="button" class="button btn-primary" data-modal-open>Order Service</button>
+       <div class="container">
+          <h1 class="hero-header headers">Effective Solutions for Your Business</h1>
+  
+          <button type="button" class="button btn-primary" data-modal-open>Order Service</button>
+       </div>
       </section>
 
 
@@ -196,13 +200,28 @@
           <h2 class="service-header headers">What are we doing</h2>
           <ul class="list list-service ">
             <li  class="service-items">
-              <img src="./images/Rectangle71.jpg" alt="Ractangle" width="360" />
+              <img 
+              
+              src="./images/Rectangle71.jpg" 
+              alt="Ractangle"
+              srcset="./images/Rectangle71.jpg 1x, ./images/Rectangle71-2x.jpg 2x "
+               width="360" />
             </li>
             <li class="service-items">
-              <img src="./images/Rectangle712.jpg" alt="Ractangle2" width="360" />
+              <img 
+              
+              src="./images/Rectangle712.jpg" 
+              alt="Ractangle2" 
+              srcset="./images/Rectangle712.jpg 1x, ./images/Rectangle712-2x.jpg 2x "
+              width="360" />
             </li>
             <li class="service-items">
-              <img src="./images/Rectangle713.jpg" alt="Ractangle3" width="360" />
+              <img 
+              
+              src="./images/Rectangle713.jpg"
+               alt="Ractangle3" 
+               srcset="./images/Rectangle713.jpg 1x, ./images/Rectangle713-2x.jpg 2x "
+               width="360" />
             </li>
           </ul>
        </div>
@@ -213,7 +232,12 @@
           <h2 class="team-header headers">Our Team</h2>
           <ul class="list team-members">
               <li class="team-member-card">
-                <img class="member-photo" src="./images/img1sq.jpg" alt="Mark Guerrero" width="264" />
+                <img class="member-photo" 
+                
+                src="./images/img1sq.jpg" 
+                alt="Mark Guerrero" 
+                srcset="./images/img1sq.jpg 1x, ./images/img1-2x.jpg 2x"
+                width="264" />
                 <div class="photo-sign">
                   <h3 class="member-name">Mark Guerrero</h3>
                   <p class="member-position">Product Designer</p>
@@ -236,7 +260,12 @@
                 </div>
               </li>
               <li class="team-member-card">
-                <img class="member-photo" src="./images/img2sq.jpg" alt="Tom Ford" width="264" />
+                <img class="member-photo" 
+                
+                src="./images/img2sq.jpg" 
+                alt="Tom Ford" 
+                srcset="./images/img2sq.jpg 1x, ./images/img2-2x.jpg 2x"
+                width="264" />
                 <div class="photo-sign">
                   <h3 class="member-name">Tom Ford</h3>
                   <p class="member-position">Frontend Developer</p>
@@ -259,7 +288,12 @@
                 </div>
               </li>
               <li class="team-member-card">
-                <img class="member-photo" src="./images/img3sq.jpg" alt="Camila Garcia" width="264" />
+                <img class="member-photo"
+                
+                 src="./images/img3sq.jpg"
+                  alt="Camila Garcia" 
+                  srcset="./images/img3sq.jpg 1x, ./images/img3-2x.jpg 2x"
+                  width="264" />
                 <div class="photo-sign">
                   <h3 class="member-name">Camila Garcia</h3>
                   <p class="member-position">Marketing</p>
@@ -282,7 +316,12 @@
                 </div>
               </li>
               <li class="team-member-card">
-                <img class="member-photo" src="./images/img4sq.jpg" alt="Daniel Wilson" width="264" />
+                <img class="member-photo"
+                
+                src="./images/img4sq.jpg" 
+                alt="Daniel Wilson" 
+                srcset="./images/img4sq.jpg 1x, ./images/img4-2x.jpg 2x"
+                width="264" />
                 <div class="photo-sign">
                   <h3 class="member-name">Daniel Wilson</h3>
                   <p class="member-position">UI Designer</p>
@@ -483,7 +522,7 @@
               
         <div class="modal-field-check-box">
              <input  class="checkbox-input hidden" type="checkbox"  id="policy">
-             <label class="checkbox-text" for="policy">I accept the terms and conditions of the&nbsp; <a href=""> Privacy Policy</a>
+             <label class="checkbox-text" for="policy"><span>I accept the terms and conditions of the&nbsp; <a href=""> Privacy Policy</a></span>
             </label>
         </div>
           

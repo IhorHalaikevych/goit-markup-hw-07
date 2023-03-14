@@ -3,6 +3,7 @@
       max-width: 426px;
   
     }
+    
 
 .benefits-logo{
     display: none;
@@ -25,7 +26,9 @@
     .service-offer {
         display: none;
     }
-    
+    .mobile-tel-link {
+      font-weight: 600;
+      font-size: 20px;}
     
     
   }
